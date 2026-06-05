@@ -74,3 +74,114 @@
 .mrt-zoom:hover img {
 	transform: scale(1.06);
 }
+
+/* ===== Maranta starter pattern ===== */
+.mrt-home {
+	--mrt-ink: #17211b;
+	--mrt-muted: #59655f;
+	--mrt-line: #dfe6df;
+	--mrt-blush: #c7466f;
+	--mrt-leaf: #1f3a2c;
+	color: var(--mrt-ink);
+}
+
+.mrt-home .mrt-hero {
+	padding-bottom: clamp(56px, 8vw, 104px);
+	padding-top: clamp(72px, 10vw, 132px);
+}
+
+.mrt-home .mrt-kicker {
+	color: var(--mrt-blush);
+	font-size: 0.82rem;
+	font-weight: 700;
+	letter-spacing: 0;
+	margin-bottom: 18px;
+	text-transform: uppercase;
+}
+
+.mrt-home h1 {
+	font-size: clamp(3rem, 8vw, 7.5rem);
+	line-height: 0.95;
+	margin-bottom: 24px;
+	max-width: 10ch;
+}
+
+.mrt-home h2 {
+	font-size: clamp(2rem, 4vw, 4rem);
+	line-height: 1;
+	margin-bottom: 28px;
+	max-width: 12ch;
+}
+
+.mrt-home h3 {
+	font-size: 1.2rem;
+	line-height: 1.2;
+	margin-bottom: 12px;
+}
+
+.mrt-home p {
+	color: var(--mrt-muted);
+	font-size: 1rem;
+	line-height: 1.65;
+}
+
+.mrt-home .mrt-lead {
+	font-size: clamp(1.15rem, 2vw, 1.45rem);
+	max-width: 720px;
+}
+
+.mrt-home .mrt-section {
+	border-top: 1px solid var(--mrt-line);
+	padding-bottom: clamp(56px, 8vw, 96px);
+	padding-top: clamp(56px, 8vw, 96px);
+}
+
+.mrt-home .mrt-cards {
+	gap: 18px;
+}
+
+.mrt-home .mrt-card {
+	border: 1px solid var(--mrt-line);
+	border-radius: 8px;
+	padding: clamp(20px, 3vw, 32px);
+}
+
+.mrt-home .mrt-feature {
+	background: #f5f7f2;
+	border: 0;
+	border-radius: 8px;
+	margin-bottom: clamp(56px, 8vw, 96px);
+	padding-left: clamp(20px, 4vw, 56px);
+	padding-right: clamp(20px, 4vw, 56px);
+}
+
+.mrt-home .mrt-feature p,
+.mrt-home .mrt-cta p {
+	max-width: 760px;
+}
+
+.mrt-home .mrt-cta {
+	border-bottom: 1px solid var(--mrt-line);
+}
+
+.mrt-home .wp-block-button__link {
+	border-radius: 6px;
+	font-weight: 700;
+	padding: 13px 22px;
+}
+
+.mrt-home .mrt-button-primary .wp-block-button__link {
+	background: var(--mrt-leaf);
+	color: #ffffff;
+}
+
+.mrt-home .mrt-button-secondary .wp-block-button__link {
+	border-color: var(--mrt-leaf);
+	color: var(--mrt-leaf);
+}
+
+@media (max-width: 781px) {
+	.mrt-home h1 {
+		max-width: 100%;
+	}
+}

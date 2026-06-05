@@ -66,3 +66,116 @@ add_action(
 		);
 	}
 );
+
+add_action(
+	'init',
+	function (): void {
+		if (!function_exists('register_block_pattern')) {
+			return;
+		}
+
+		register_block_pattern_category(
+			'maranta-motion',
+			array('label' => __('Maranta Motion', 'maranta-motion'))
+		);
+
+		register_block_pattern(
+			'maranta-motion/home-studio',
+			array(
+				'title' => __('Maranta Studio - Inicio', 'maranta-motion'),
+				'categories' => array('maranta-motion'),
+				'content' => <<<'HTML'
+<!-- wp:group {"className":"mrt-home","layout":{"type":"constrained"}} -->
+<div class="wp-block-group mrt-home"><!-- wp:group {"className":"mrt-hero mrt-up","layout":{"type":"constrained"}} -->
+<div class="wp-block-group mrt-hero"><!-- wp:paragraph {"className":"mrt-kicker"} -->
+<p class="mrt-kicker">Estudio creativo digital</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":1} -->
+<h1 class="wp-block-heading">Maranta Studio</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"mrt-lead"} -->
+<p class="mrt-lead">Diseñamos presencia digital clara, elegante y viva para marcas que quieren sentirse memorables desde el primer vistazo.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"mrt-button-primary"} -->
+<div class="wp-block-button mrt-button-primary"><a class="wp-block-button__link wp-element-button">Empezar proyecto</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"className":"is-style-outline mrt-button-secondary"} -->
+<div class="wp-block-button is-style-outline mrt-button-secondary"><a class="wp-block-button__link wp-element-button">Ver servicios</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"mrt-section mrt-stagger","layout":{"type":"constrained"}} -->
+<div class="wp-block-group mrt-section mrt-stagger"><!-- wp:heading -->
+<h2 class="wp-block-heading">Lo que hacemos</h2>
+<!-- /wp:heading -->
+
+<!-- wp:columns {"className":"mrt-cards"} -->
+<div class="wp-block-columns mrt-cards"><!-- wp:column {"className":"mrt-card"} -->
+<div class="wp-block-column mrt-card"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Websites</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Páginas limpias, responsive y fáciles de gestionar en WordPress.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"className":"mrt-card"} -->
+<div class="wp-block-column mrt-card"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Identidad</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Sistemas visuales con dirección, tono y consistencia para crecer.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"className":"mrt-card"} -->
+<div class="wp-block-column mrt-card"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Movimiento</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Animaciones sutiles que dan ritmo sin sacrificar claridad.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"mrt-section mrt-feature mrt-scale","layout":{"type":"constrained"}} -->
+<div class="wp-block-group mrt-section mrt-feature"><!-- wp:heading -->
+<h2 class="wp-block-heading">Una web que se siente hecha para tu marca</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Partimos de una estructura clara: mensaje, experiencia, secciones y llamados a la acción. Luego sumamos detalle visual y movimiento para que cada bloque tenga intención.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"mrt-section mrt-cta mrt-fade","layout":{"type":"constrained"}} -->
+<div class="wp-block-group mrt-section mrt-cta"><!-- wp:heading -->
+<h2 class="wp-block-heading">Construyamos la primera versión</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Este bloque puede convertirse en el cierre de la home, una invitación a contacto o el inicio de una propuesta comercial.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"mrt-button-primary"} -->
+<div class="wp-block-button mrt-button-primary"><a class="wp-block-button__link wp-element-button">Contactar</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+HTML,
+			)
+		);
+	}
+);
