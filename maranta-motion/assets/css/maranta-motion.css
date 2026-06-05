@@ -1,0 +1,76 @@
+/* ===== Maranta Motion ===== */
+
+/* Initial states only apply when JS loaded. If JS fails, content remains visible. */
+.mrt-on .mrt-up {
+	opacity: 0;
+	transform: translateY(40px);
+}
+
+.mrt-on .mrt-fade {
+	opacity: 0;
+}
+
+.mrt-on .mrt-scale {
+	opacity: 0;
+	transform: scale(0.92);
+}
+
+.mrt-on .mrt-stagger > * {
+	opacity: 0;
+	transform: translateY(40px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.mrt-on .mrt-up,
+	.mrt-on .mrt-fade,
+	.mrt-on .mrt-scale,
+	.mrt-on .mrt-stagger > * {
+		opacity: 1 !important;
+		transform: none !important;
+	}
+}
+
+/* ===== Swiper ===== */
+.mrt-slider {
+	position: relative;
+}
+
+.mrt-slider .swiper-slide {
+	height: auto;
+}
+
+.mrt-slider.mrt-marquee .swiper-slide {
+	align-items: center;
+	display: flex;
+	width: auto;
+}
+
+.swiper-pagination-bullet {
+	background: #1f3a2c;
+	opacity: 0.3;
+}
+
+.swiper-pagination-bullet-active {
+	background: #c7466f;
+	opacity: 1;
+}
+
+.swiper-pagination-fraction {
+	color: #1f3a2c;
+	font-family: inherit;
+}
+
+/* ===== Hover zoom ===== */
+.mrt-zoom {
+	overflow: hidden;
+}
+
+.mrt-zoom img {
+	display: block;
+	transition: transform 0.6s ease;
+	width: 100%;
+}
+
+.mrt-zoom:hover img {
+	transform: scale(1.06);
+}
