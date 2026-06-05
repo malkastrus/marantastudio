@@ -100,12 +100,12 @@ add_action(
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button {"className":"mrt-button-primary"} -->
-<div class="wp-block-button mrt-button-primary"><a class="wp-block-button__link wp-element-button">Empezar proyecto</a></div>
+<div class="wp-block-buttons"><!-- wp:button {"className":"mrt-btn mrt-btn-arrow"} -->
+<div class="wp-block-button mrt-btn mrt-btn-arrow"><a class="wp-block-button__link wp-element-button">Empezar proyecto</a></div>
 <!-- /wp:button -->
 
-<!-- wp:button {"className":"is-style-outline mrt-button-secondary"} -->
-<div class="wp-block-button is-style-outline mrt-button-secondary"><a class="wp-block-button__link wp-element-button">Ver servicios</a></div>
+<!-- wp:button {"className":"is-style-outline mrt-btn-ghost mrt-btn-arrow"} -->
+<div class="wp-block-button is-style-outline mrt-btn-ghost mrt-btn-arrow"><a class="wp-block-button__link wp-element-button">Ver servicios</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group -->
@@ -168,8 +168,8 @@ add_action(
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button {"className":"mrt-button-primary"} -->
-<div class="wp-block-button mrt-button-primary"><a class="wp-block-button__link wp-element-button">Contactar</a></div>
+<div class="wp-block-buttons"><!-- wp:button {"className":"mrt-btn mrt-btn-arrow"} -->
+<div class="wp-block-button mrt-btn mrt-btn-arrow"><a class="wp-block-button__link wp-element-button">Contactar</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
