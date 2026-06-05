@@ -133,6 +133,12 @@
 	gap: 18px;
 }
 
+.mrt-home .mrt-shortcode-cards {
+	display: grid;
+	gap: 18px;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .mrt-home .mrt-card {
 	border: 1px solid var(--mrt-line);
 	border-radius: 8px;
@@ -160,5 +166,9 @@
 @media (max-width: 781px) {
 	.mrt-home h1 {
 		max-width: 100%;
+	}
+
+	.mrt-home .mrt-shortcode-cards {
+		grid-template-columns: 1fr;
 	}
 }

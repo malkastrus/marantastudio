@@ -179,3 +179,53 @@ HTML,
 		);
 	}
 );
+
+add_shortcode(
+	'maranta_home',
+	function (): string {
+		return <<<'HTML'
+<section class="mrt-home">
+	<div class="mrt-hero mrt-up">
+		<p class="mrt-kicker">Estudio creativo digital</p>
+		<h1>Maranta Studio</h1>
+		<p class="mrt-lead">Disenamos presencia digital clara, elegante y viva para marcas que quieren sentirse memorables desde el primer vistazo.</p>
+		<div class="wp-block-buttons">
+			<div class="wp-block-button mrt-btn mrt-btn-arrow"><a class="wp-block-button__link wp-element-button" href="#contacto">Empezar proyecto</a></div>
+			<div class="wp-block-button mrt-btn-ghost mrt-btn-arrow"><a class="wp-block-button__link wp-element-button" href="#servicios">Ver servicios</a></div>
+		</div>
+	</div>
+
+	<div id="servicios" class="mrt-section mrt-stagger">
+		<h2>Lo que hacemos</h2>
+		<div class="mrt-shortcode-cards">
+			<article class="mrt-card">
+				<h3>Websites</h3>
+				<p>Paginas limpias, responsive y faciles de gestionar en WordPress.</p>
+			</article>
+			<article class="mrt-card">
+				<h3>Identidad</h3>
+				<p>Sistemas visuales con direccion, tono y consistencia para crecer.</p>
+			</article>
+			<article class="mrt-card">
+				<h3>Movimiento</h3>
+				<p>Animaciones sutiles que dan ritmo sin sacrificar claridad.</p>
+			</article>
+		</div>
+	</div>
+
+	<div class="mrt-section mrt-feature mrt-reveal">
+		<h2>Una web que se siente hecha para tu marca</h2>
+		<p>Partimos de una estructura clara: mensaje, experiencia, secciones y llamados a la accion. Luego sumamos detalle visual y movimiento para que cada bloque tenga intencion.</p>
+	</div>
+
+	<div id="contacto" class="mrt-section mrt-cta mrt-fade">
+		<h2>Construyamos la primera version</h2>
+		<p>Este bloque puede convertirse en el cierre de la home, una invitacion a contacto o el inicio de una propuesta comercial.</p>
+		<div class="wp-block-buttons">
+			<div class="wp-block-button mrt-btn mrt-btn-arrow"><a class="wp-block-button__link wp-element-button" href="mailto:hola@example.com">Contactar</a></div>
+		</div>
+	</div>
+</section>
+HTML;
+	}
+);
